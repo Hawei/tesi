@@ -48,5 +48,40 @@ class ManagementController extends Controller
     public function processingAction(){
         return $this->render('ApplocationSonataBackgroundBundle:Management:processing.html.twig');
     }
+
+    public function addCourseLessonAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:addCourseLesson.html.twig');
+    }
+    public function courseLessonAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:courseLesson.html.twig');
+    }
+
+    public function examsAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:exams.html.twig');
+    }
+
+    public function addExamsAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:addExams.html.twig');
+    }
+
+    public function locationsAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:locations.html.twig');
+    }
+
+    public function  addLocationsAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:addLocation.html.twig');
+    }
+
+    public function coOperatorsAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:co-operators.html.twig');
+    }
+
+    public function addcoOperatorsAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:addcoOperators.html.twig');
+    }
+
+    public function offersAction(){
+        return $this->render('ApplocationSonataBackgroundBundle:Management:offer.html.twig');
+    }
 }
 

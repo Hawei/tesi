@@ -11,6 +11,7 @@ applocation_sonata_background_loginpage:
 applocation_sonata_background_indexpage:
         path:     /backindex/
         defaults: { _controller: ApplocationSonataBackgroundBundle:Index:index }
+
 applocation_sonata_background_Customerpage:
         path:     /back/Customer
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:index }
@@ -22,31 +23,72 @@ applocation_sonata_background_toaddCustomerpage:
 applocation_sonata_background_toParticipantsCustomerpage:
         path:     /back/Customer/Participants
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:toParticipants }
+
 applocation_sonata_background_Contactpersonspage:
         path:     /back/Customer/Contactpersons
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:contactpersons }
 applocation_sonata_background_addContactpersonspage:
         path:     /back/Customer/Contactpersons/add
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addContactpersons }
+
 background_participantpage:
         path:     /back/Management/participant
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:participant }
+
 background_addparticipantpage:
         path:     /back/Management/participant/add
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addparticipant }
 background_addCustomerpage:
         path:     /back/Customer/add
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addCustomer }
+
 background_addOfferpage:
         path:     /back/offer/add
-        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addOffer }
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Index:addOffer }
+
 background_coursepage:
         path:     /back/course
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:course }
+
 background_addCoursepage:
         path:     /back/course/add
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addCourse }
+
 background_processingpage:
         path:     /back/processing/list
         defaults: { _controller: ApplocationSonataBackgroundBundle:Management:processing }
 
+background_addCourseLessonpage:
+        path:     /back/CourseLesson/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addCourseLesson }
+
+background_courseLessonpage:
+        path:     /back/CourseLesson/list
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:courseLesson }
+
+background_addExamspage:
+        path:     /back/Exams/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addExams }
+
+background_Examspage:
+        path:     /back/Exams/list
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:exams }
+
+background_locationspage:
+        path:     /back/locations/list
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:locations }
+background_addLocationspage:
+        path:     /back/locations/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addLocations }
+
+background_coOperatorspage:
+        path:     /back/coOperators/list
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:coOperators }
+
+background_addcoOperatorspage:
+        path:     /back/coOperators/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addcoOperators }
+
+background_offerspage:
+        path:     /back/Offers/list
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:offers }
