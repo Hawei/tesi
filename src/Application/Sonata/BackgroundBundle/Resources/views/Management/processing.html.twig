@@ -1,0 +1,134 @@
+<!-- header begin -->
+{{ include('ApplocationSonataBackgroundBundle:Index:header.html.twig',{"title":"Add participant","url":path('background_addparticipantpage')}) }}
+<!-- header end -->
+<!-- Left side column. contains the logo and sidebar -->
+{{ include('ApplocationSonataBackgroundBundle:Index:sidebar.html.twig') }}
+
+
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+
+<!-- Main content -->
+<section class="content">
+<div class="row">
+<div class="col-xs-12">
+<div class="box">
+<div class="box-header">
+    <h3 class="box-title"></h3>
+</div><!-- /.box-header -->
+<div class="box-body">
+<table id="example2" class="table table-bordered table-hover">
+<thead>
+<tr>
+    <th>Planning number</th>
+    <th>Course</th>
+    <th>Date</th>
+    <th>Present</th>
+    <th>Result</th>
+    <th>Evaluation</th>
+    <th></th>
+</tr>
+</thead>
+    <tbody>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+    <tr>
+        <td>< planning number > - course name - finish date - finish location</td>
+        <td>Course name</td>
+        <td>01-07-2015</td>
+        <td>yes/no</td>
+        <td> </td>
+        <td> </td>
+        <td><button class="btn btn-info">View</button></td>
+    </tr>
+
+    </tbody>
+</table>
+</div><!-- /.box-body -->
+</div><!-- /.box -->
+
+<!-- /.box -->
+</div><!-- /.col -->
+</div><!-- /.row -->
+</section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+<!-- footer begin -->
+{{ include('ApplocationSonataBackgroundBundle:Index:footer.html.twig') }}
+<!-- footer end -->
+<script type="text/javascript">
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+</body>
+</html>

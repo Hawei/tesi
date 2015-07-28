@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AdminLTE 2 | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.4 -->
+    <link href="{{ asset('bundles/applocationsonatabackground/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- FontAwesome 4.3.0 -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons 2.0.0 -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Select2 -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="{{ asset('bundles/applocationsonatabackground/dist/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="{{ asset('bundles/applocationsonatabackground/dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- iCheck -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/iCheck/flat/blue.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/morris/morris.css') }}" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/jvectormap/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/datepicker/datepicker3.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/daterangepicker/daterangepicker-bs3.css') }}" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link href="{{ asset('bundles/applocationsonatabackground/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+        <div class="row"   style="background-color:#d2d6de">
+            <div style="padding-top:10px;padding-bottom:10px;width:99%;" align="center">
+                <div class="col-sm-2" align="center" style="padding-left:20px;">
+                    <a class="btn btn-block btn-primary btn-xs">Partici pent managem ent</a></div><div class="col-sm-2">
+                    <a class="btn btn-block btn-default btn-xs">Time sheet</a></div><div class="col-sm-2">
+                    <a class="btn btn-block btn-default btn-xs">Digitraining</a></div><div class="col-sm-5">
+                    <label>TESI | </label>
+                </div><div class="col-sm-1">
+                    <button class="btn btn-block btn-default btn-xs" type="button">Back</button>
+                </div>
+                <br/>
+            </div>
+        </div>
+        <!-- Logo -->
+        <a href="index2.html" class="logo"  style="background-color:#3c8dbc">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"> </span>
+
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <form action="#" method="get" class="">
+                <!-- Sidebar toggle button-->
+                <div class="col-sm-2" style="margin:10px;">
+                    <a href="{{ url }}" class="btn btn-block btn-success">{{ title }}</a>
+                </div>
+                <div class="col-sm-5"></div><div class="col-sm-2" style="margin:10px;">
+                    <select class="form-control select2" >
+                        <option value="0" selected="selected">All</option>
+                        <option value="1">ToDO</option>
+                        <option value="2">Co-operator (Surname)</option>
+                        <option value="3">Schedule</option>
+                        <option value="4">Date</option>
+                    </select></div><div class="col-sm-2" style="margin:10px;">
+
+                    <div class="input-group ">
+                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+                    </div>
+                </div> </form>
+        </nav>
+    </header>

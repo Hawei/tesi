@@ -1,0 +1,52 @@
+applocation_sonata_background_homepage:
+    path:     /backlogin/
+    defaults: { _controller: ApplocationSonataBackgroundBundle:Login:index }
+
+applocation_sonata_background_loginpage:
+   path:    /backlogin/toLogin
+   defaults: { _controller: ApplocationSonataBackgroundBundle:Login:login }
+   requirements:
+       method:  POST
+
+applocation_sonata_background_indexpage:
+        path:     /backindex/
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Index:index }
+applocation_sonata_background_Customerpage:
+        path:     /back/Customer
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:index }
+
+applocation_sonata_background_toaddCustomerpage:
+        path:     /back/Customer/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:toadd }
+
+applocation_sonata_background_toParticipantsCustomerpage:
+        path:     /back/Customer/Participants
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:toParticipants }
+applocation_sonata_background_Contactpersonspage:
+        path:     /back/Customer/Contactpersons
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:contactpersons }
+applocation_sonata_background_addContactpersonspage:
+        path:     /back/Customer/Contactpersons/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addContactpersons }
+background_participantpage:
+        path:     /back/Management/participant
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:participant }
+background_addparticipantpage:
+        path:     /back/Management/participant/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addparticipant }
+background_addCustomerpage:
+        path:     /back/Customer/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addCustomer }
+background_addOfferpage:
+        path:     /back/offer/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addOffer }
+background_coursepage:
+        path:     /back/course
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:course }
+background_addCoursepage:
+        path:     /back/course/add
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:addCourse }
+background_processingpage:
+        path:     /back/processing/list
+        defaults: { _controller: ApplocationSonataBackgroundBundle:Management:processing }
+

@@ -1,0 +1,41 @@
+<!-- header begin -->
+{{ include('AdminMainBundle:Index:header.html.twig') }}
+<!-- header end -->
+<!-- Left side column. contains the logo and sidebar -->
+{{ include('AdminMainBundle:Index:sidebar.html.twig') }}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- Default box -->
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">信息提示页</h3>
+            </div>
+            <div class="box-body" align="center">
+                <br/><br/>
+               <b> {{ msg }},3秒钟跳转至上一页</b>,<br/><br/>如果您的浏览器不支持跳转，请点击<a href="{{ url }}">返回上一页</a>!
+                <br/><br/>
+            </div><!-- /.box-body -->
+            <div class="box-footer">
+                <a href="{{ url }}">返回上一页</a>
+            </div><!-- /.box-footer-->
+        </div><!-- /.box -->
+
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+<!-- footer begin -->
+<script>
+
+    setTimeout("winlocation()",3000);
+    function winlocation(){
+        window.location = "{{ url }}";
+    }
+
+</script>
+{{ include('AdminMainBundle:Index:footer.html.twig') }}
+<!-- footer end -->
+</body>
+</html>

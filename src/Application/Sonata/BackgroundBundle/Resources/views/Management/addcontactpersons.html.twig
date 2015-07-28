@@ -1,0 +1,116 @@
+<!-- header begin -->
+{{ include('ApplocationSonataBackgroundBundle:Index:header.html.twig',{"title":"Add contactperson","url":""}) }}
+
+<!-- header end -->
+<!-- Left side column. contains the logo and sidebar -->
+{{ include('ApplocationSonataBackgroundBundle:Index:sidebar.html.twig') }}
+
+
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="form-group col-sm-10">
+                            <h3 class="box-title">Contact person</h3></div>
+
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">NAME * </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" placeholder=""/>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">E-MAIL * </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">TELEPHONE</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">CUSTOMER</label>
+                            <div class="col-sm-4">
+                                <select  class="form-control select2">
+                                    <option value="" selected="selected">Select a customer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">INFORMATION</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <h3 class="box-title">Type</h3></div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">TYPE CONTACT</label>
+                            <div class="col-sm-6" style="color:#000;">
+                                <select class="form-control select2" multiple="multiple" data-placeholder="Select a TYPE CONTACT">
+                                    <option>Billing</option>
+                                    <option>Substantively</option>
+                                    <option>Location</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">ACTIVE </label>
+                            <div class="col-sm-4">
+                                <input type="checkbox" checked="checked" />
+
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-7 control-label" for=""> </label>
+                            <div class="col-sm-5">
+
+                                <button class="btn btn-info" type="submit">Save</button>
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                </div><!-- /.box -->
+
+                <!-- /.box -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+<!-- footer begin -->
+{{ include('ApplocationSonataBackgroundBundle:Index:footer.html.twig') }}
+<script src="{{ asset('bundles/applocationsonatabackground/plugins/select2/select2.full.min.js') }}" type="text/javascript"></script>
+<!-- InputMask -->
+<script src="{{ asset('bundles/applocationsonatabackground/plugins/input-mask/jquery.inputmask.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bundles/applocationsonatabackground/plugins/input-mask/jquery.inputmask.date.extensions.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bundles/applocationsonatabackground/plugins/input-mask/jquery.inputmask.extensions.js') }}" type="text/javascript"></script>
+<!-- footer end -->
+<script type="text/javascript">
+    $(function () {
+        //Initialize Select2 Elements
+        $(".select2").select2();
+
+        //Colorpicker
+        $(".my-colorpicker1").colorpicker();
+        //color picker with addon
+        $(".my-colorpicker2").colorpicker();
+
+        //Timepicker
+        $(".timepicker").timepicker({
+            showInputs: false
+        });
+    });
+</script>
+</body>
+</html>

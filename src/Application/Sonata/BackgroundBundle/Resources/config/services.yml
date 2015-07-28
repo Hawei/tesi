@@ -1,0 +1,4 @@
+services:
+#    applocation_sonata_background.example:
+#        class: Application\Sonata\BackgroundBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

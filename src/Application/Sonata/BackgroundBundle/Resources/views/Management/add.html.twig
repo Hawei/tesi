@@ -1,0 +1,135 @@
+
+<!-- header begin -->
+{{ include('ApplocationSonataBackgroundBundle:Index:header.html.twig',{"title":"Add Customer","url":"#"}) }}
+<!-- header end -->
+<!-- Left side column. contains the logo and sidebar -->
+{{ include('ApplocationSonataBackgroundBundle:Index:sidebar.html.twig') }}
+
+
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!-- /.box-header -->
+
+                    <div class="box-body">
+                        <div class="form-group col-sm-10">
+                            <div class="col-sm-4">
+                                <a class="btn btn-primary">Customer data</a>
+                            </div>
+                            <div class="col-sm-4"><a href="{{ path('applocation_sonata_background_toParticipantsCustomerpage') }}" class="btn btn-default">  Participants  </a></div>
+
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <h3 class="box-title">Customer</h3></div>
+
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">NAME * </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" placeholder=""/>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">E-MAIL * </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">TELEPHONE</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <h3 class="box-title">Address</h3></div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">ADDRESS</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">CITY</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">ZIP CODE</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-10">
+                            <h3 class="box-title">Mailbox</h3></div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">ADDRESS</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">CITY</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">ZIP CODE</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-10">
+                            <h3 class="box-title">Extra</h3>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">DEBTOR NUMBER </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">KvK NUMBER </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-3 control-label" for="">ACTIVE </label>
+                            <div class="col-sm-4">
+                                <input type="checkbox" checked="checked" />
+
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-10">
+                            <label class="col-sm-7 control-label" for=""> </label>
+                            <div class="col-sm-5">
+
+                                <button class="btn btn-info" type="submit">Save</button>
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                </div><!-- /.box -->
+
+                <!-- /.box -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+<!-- footer begin -->
+{{ include('ApplocationSonataBackgroundBundle:Index:footer.html.twig') }}
+<!-- footer end -->
+</body>
+</html>
